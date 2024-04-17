@@ -2,6 +2,12 @@
 
 Welcome to our project repository! Here, we will be hosting all of our project files.
 
+Guideline on how the work process should be: 
+-Add Code on your testing branch. 
+-Merge to develop.
+-If everything works ok, I will merge to Main branch. 
+
+
 ## Predictive Modeling for Future Performance
 
 **Research Question:** Can we predict a player's future performance (e.g., next season's batting average or ERA) based on their past performance and other factors?
