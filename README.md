@@ -1,7 +1,3 @@
-Certainly! Here's a revised version of your README file:
-
----
-
 # IT180_TeamProject1
 
 Welcome to our project repository! Here, we will be hosting all of our project files.
