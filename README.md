@@ -1,22 +1,47 @@
+Certainly! Here's a revised version of your README file:
+
+---
+
 # IT180_TeamProject1
-We will host all of our files here. 
 
-4. Predictive Modeling for Future Performance
-Research Question: Can we predict a player's future performance (e.g., next season's batting average or ERA) based on their past performance and other factors?
+Welcome to our project repository! Here, we will be hosting all of our project files.
 
-Data Tables to Use: People, Batting, Pitching, Fielding, Teams
-Analysis Approach: Develop predictive models using historical data as features (previous seasons' stats, age, team performance metrics). Techniques could include linear regression for continuous outcomes.
+## Predictive Modeling for Future Performance
 
+**Research Question:** Can we predict a player's future performance (e.g., next season's batting average or ERA) based on their past performance and other factors?
 
-**DAY 1 PREP**
-- Problem 
+**Data Tables to Use:** 
+- People
+- Batting
+- Pitching
+- Fielding
+- Teams
 
-- Success 
+**Analysis Approach:** 
+We aim to develop predictive models using historical data as features, including previous seasons' statistics, age, and team performance metrics. Techniques may include linear regression for continuous outcomes.
 
-- Metrics-What, How 
+## DAY 1 PREP
 
-- Data 
+**Agenda:**
+- **Problem:** Define the problem statement and its significance.
+- **Success Criteria:** Determine what defines success for our project.
+- **Metrics:** Identify the metrics we'll use to measure success and how they'll be calculated.
+- **Data:** Assess the data sources and requirements.
+- **Tasks for Today:** Outline specific tasks to be completed.
+- **Prepare for Next Meeting:** Set objectives and agenda items for the upcoming meeting.
 
-- What is getting done today 
+## Today's Focus:
+- **Problem Definition:** Clearly articulate the problem statement and its scope.
+- **Data Exploration:** Begin exploring the available datasets and understand their structure.
+- **Team Roles:** Assign roles and responsibilities for efficient progress.
+- **Outline Project Plan:** Draft an initial project plan outlining key milestones and timelines.
 
-- Prepare for next meeting 
+## Prepare for Next Meeting:
+- Review progress made today.
+- Discuss any roadblocks encountered.
+- Refine project objectives if necessary.
+- Assign tasks for the next session.
+
+---
+
+Feel free to adjust and customize this as needed for your project!
