@@ -38,6 +38,4 @@ We aim to develop predictive models using historical data as features, including
 - Refine project objectives if necessary.
 - Assign tasks for the next session.
 
----
 
-Feel free to adjust and customize this as needed for your project!
