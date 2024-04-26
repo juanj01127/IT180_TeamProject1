@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Players</title>
+</head>
+<body>
+    <h1>Display Players</h1>
+    <form method="post">
+        <label for="year">Enter a year:</label>
+        <input type="text" id="year" name="year" required>
+        <button type="submit">Submit</button>
+    </form>
+    {% if error %}
+    <p>No players found for the year {{ year }}.</p>
+    {% endif %}
+    {% if players_info %}
+    <h2>Players for the year {{ year }}:</h2>
+    <ul>
+        {% for player_info in players_info %}
+        <li>{{ player_info }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+</body>
+</html>
