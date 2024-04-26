@@ -6,6 +6,9 @@ app = Flask(__name__)
 # Load the People table into a pandas dataframe
 people_df = pd.read_excel("C:\\Users\\JCuellar\\Downloads\\People.xlsx")
 teams_df = pd.read_excel("C:\\Users\\JCuellar\\Downloads\\Teams.xlsx")
+pitching_df = pd.read_excel("C:\\Users\\JCuellar\\Downloads\\Pitching.xlsx")
+fielding_df = pd.read_excel("C:\\Users\\JCuellar\\Downloads\\Fielding.xlsx")
+batting_df = pd.read_excel("C:\\Users\\JCuellar\\Downloads\\Batting.xlsx")
 
 # Function to display all player information for a given season
 def display_players_for_season(year):
@@ -53,7 +56,6 @@ def display_teams_for_season(year):
             team_info = f"{team['name']} - Wins: {team['W']}, Losses: {team['L']}"
             teams_info.append(team_info)
         return teams_info
-
 
 
 # Route for displaying teams for a given season
