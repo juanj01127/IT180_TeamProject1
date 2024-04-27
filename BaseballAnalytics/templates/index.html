@@ -4,13 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Baseball Analytics</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dps.css') }}">
 </head>
 <body>
-    <h1>Welcome to Baseball Analytics</h1>
-    <p>Use the links below to access different analytics:</p>
-    <ul>
-        <li><a href="/players">Display Players By Age</a></li>
-        <li><a href="/teams">Display Teams By Season</a></li>
-    </ul>
+    <div class="container">
+        <div class="banner">
+            <h1>Welcome to Baseball Analytics</h1>
+        </div>
+        <header class="header">
+            {% include 'header.html' %}
+        </header>
+
+        <main class="content">
+            <div class="home">
+                <h2>ITSCM 180- Team Project 1</h2>
+                <h4>Welcome to Baseball Analytics, a collaborative project by Juan Cuellar, Zack Koening, and Ray L.</h4>
+                    <p>Our platform provides comprehensive insights and analysis for baseball enthusiasts. 
+                    Through a variety of tools and visualizations, users can explore player performance, team statistics, and trends within the game.
+                     Navigate through the links above to access different analytics modules and uncover valuable insights into the world of baseball.</p>
+            </div>
+        </main>
+    </div>
 </body>
 </html>
