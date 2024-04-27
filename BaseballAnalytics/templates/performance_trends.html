@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance Trends</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dps.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="banner">
+            <h1>Welcome to Baseball Analytics</h1>
+        </div>
+        <header class="header">
+            {% include 'header.html' %}
+        </header>
+        <main class="content">
+            <h1>#1 Performance Trends and Player Development</h1>
+            <p>This page displays performance trends of baseball players based on their age. The plots show how various performance metrics change with age, providing insights into the development and peak performance periods of players.</p>
+            <form method="post">
+                <button type="submit">Calculate Performance Trends</button>
+            </form>
+            {% if plot_data %}
+                <img src="data:image/png;base64,{{ plot_data }}" alt="Performance Trends">
+            {% endif %}
+        </main>
+    </div>
+</body>
+</html>

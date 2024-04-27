@@ -1,0 +1,47 @@
+v<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict Batting Avg</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dps.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="banner">
+            <h1>Welcome to Baseball Analytics</h1>
+        </div>
+        <header class="header">
+            {% include 'header.html' %}
+        </header>
+        <main class="content">
+            <h1>Predict Batting Average</h1>
+            <p>This page allows you to predict the batting average of a baseball player based on their historical performance.</p>
+            <p>To predict the batting average for a specific player, enter their player ID below and click "Predict".</p>
+            <form method="POST">
+                <label for="player_id">Enter player ID:</label>
+                <input type="text" id="player_id" name="player_id">
+                <button type="submit">Predict</button>
+            </form>
+            {% if player_id %}
+                <p>Player ID: {{ player_id }}</p>
+            {% endif %}
+            {% if predicted_avg is not none %}
+                <p>Predicted Batting Average: {{ predicted_avg }}</p>
+            {% endif %}
+
+            <h2>How Prediction is Done:</h2>
+            <p>The prediction of batting average is done using a linear regression model. The model is trained on historical data of players' performances, including the number of at-bats (AB), hits (H), and age. These features are used to predict the batting average for a given player in a specific season.</p>
+
+            <h2>Example Player IDs:</h2>
+            <ul>
+                <li>arandjo01</li>
+                <li>croucbi01</li>
+                <li>dalbebo01</li>
+                <li>coopebr01</li>
+                <li>daviara01</li>
+            </ul>
+        </main>
+    </div>
+</body>
+</html>
