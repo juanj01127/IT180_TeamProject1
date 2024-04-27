@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+    color: #333;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.header {
+    background-color: #1d2d44;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.header a {
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.header a:hover {
+    background-color: #3a506b;
+    color: #ffffff;
+}
+
+.header a.active {
+    background-color: #ffb612;
+    color: #1d2d44;
+}
+
+.content {
+    padding: 16px;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+}
+
+.banner {
+    text-align: center;
+    background-color: #ffb612;
+    padding: 40px 0;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.banner h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #1d2d44;
+}
+
+h1, h2 {
+    color: #1d2d44;
+}
+
+/* Styling for input text box */
+input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #333;
+}
+
+/* Styling for buttons */
+button[type="submit"] {
+    padding: 8px 16px;
+    background-color: #1d2d44;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #3a506b;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Records</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dps.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="banner">
+            <h1>Welcome to Baseball Analytics</h1>
+        </div>
+        <header class="header">
+            {% include 'header.html' %}
+        </header>
+        <main class="content">
+            <h1>Display Teams</h1>
+            <form method="post">
+                <label for="year">Enter a year:</label>
+                <input type="text" id="year" name="year" required>
+                <button type="submit">Submit</button>
+            </form>
+            {% if error %}
+                <p>No teams found for the year {{ year }}.</p>
+            {% endif %}
+            {% if teams_info %}
+                <h2>Teams for the year {{ year }}:</h2>
+                <ul>
+                    {% for team_info in teams_info %}
+                        <li>{{ team_info }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        </main>
+    </div>
+</body>
+</html>
