@@ -1,47 +1,59 @@
-# IT180_TeamProject1  Juan/Zack/Ray
+# Baseball Analytics Flask App
 
-Welcome to our project repository! Here, we will be hosting all of our project files.
+Welcome to the Baseball Analytics Flask App! This project provides insights and analysis for baseball enthusiasts. It offers various tools and visualizations to explore player performance, team statistics, and trends in the game.
 
-**Guideline on how the work process should be:**
-- Add Code on your testing branch. 
-- Merge to develop.
-- If everything works ok, I will merge to Main branch. 
+## Table of Contents
 
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Predictive Modeling for Future Performance
+## Features
 
-**Research Question:** Can we predict a player's future performance (e.g., next season's batting average or ERA) based on their past performance and other factors?
+- Display performance trends in batting and pitching.
+- Display players and teams for specific seasons.
+- Predict batting average for specific players.
+- Intuitive user interface for easy navigation.
 
-**Data Tables to Use:** 
-- People
-- Batting
-- Pitching
-- Fielding
-- Teams
+## Installation
 
-**Analysis Approach:** 
-We aim to develop predictive models using historical data as features, including previous seasons' statistics, age, and team performance metrics. Techniques may include linear regression for continuous outcomes.
+To run the Baseball Analytics Flask App locally, follow these steps:
 
-## DAY 1 PREP
+1. **Clone this repository** to your local machine using:
 
-**Agenda:**
-- **Problem:** Define the problem statement and its significance.
-- **Success Criteria:** Determine what defines success for our project.
-- **Metrics:** Identify the metrics we'll use to measure success and how they'll be calculated.
-- **Data:** Assess the data sources and requirements.
-- **Tasks for Today:** Outline specific tasks to be completed.
-- **Prepare for Next Meeting:** Set objectives and agenda items for the upcoming meeting.
+   ```bash
+   git clone https://github.com/your-username/baseball-analytics-flask-app.git
+   ```
 
-## Today's Focus:
-- **Problem Definition:** Clearly articulate the problem statement and its scope.
-- **Data Exploration:** Begin exploring the available datasets and understand their structure.
-- **Team Roles:** Assign roles and responsibilities for efficient progress.
-- **Outline Project Plan:** Draft an initial project plan outlining key milestones and timelines.
+2. **Install the required dependencies** by navigating to the project directory and running:
 
-## Prepare for Next Meeting:
-- Review progress made today.
-- Discuss any roadblocks encountered.
-- Refine project objectives if necessary.
-- Assign tasks for the next session.
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## Usage
+
+1. After installing the dependencies, **navigate to the project directory** and run the Flask app using:
+
+   ```bash
+   python app.py
+   ```
+
+2. **Open a web browser** and go to `http://localhost:5000` to access the Baseball Analytics Flask App.
+
+3. **Explore the different features** and functionalities offered by the app.
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute to the development of the Baseball Analytics Flask App, please follow these steps:
+
+1. **Fork the repository** on GitHub.
+2. Create a **new branch** from the `main` branch for your feature or bug fix.
+3. Make your changes and ensure that the code is **properly formatted**.
+4. **Test your changes** locally to ensure they work as expected.
+5. **Commit your changes** and push them to your fork.
+6. Submit a **pull request** to the `main` branch of the original repository.
 
 
