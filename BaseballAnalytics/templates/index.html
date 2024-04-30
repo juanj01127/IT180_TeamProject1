@@ -5,6 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Baseball Analytics</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/dps.css') }}">
+    <style>
+        .statement {
+            display: none;
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #1d2d44;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        button:hover {
+            background-color: #3a506b;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -17,13 +36,76 @@
 
         <main class="content">
             <div class="home">
-                <h2>ITSCM 180- Team Project 1</h2>
-                <h4>Welcome to Baseball Analytics, a collaborative project by Juan Cuellar, Zack Koening, and Ray L.</h4>
-                    <p>Our platform provides comprehensive insights and analysis for baseball enthusiasts. 
-                    Through a variety of tools and visualizations, users can explore player performance, team statistics, and trends within the game.
-                     Navigate through the links above to access different analytics modules and uncover valuable insights into the world of baseball.</p>
+                <h2>ITSCM 180 - Team Project 1</h2>
+                <h3>Introduction:</h3>
+                <h4>Who are we?</h4>
+                <ul>
+                    <li>Juan Cuellar</li>
+                    <li>Zack Koening</li>
+                    <li>Ray L</li>
+                </ul>
+                <h3>Baseball Player Performance Analysis and Prediction</h3>
+                <button onclick="showProblemStatement()">Show Problem Statement</button>
+                <button onclick="showSolutionStatement()">Show Solution Statement</button>
+                <button onclick="showEfficacyStatement()">Show Efficacy of Using ChatGPT</button>
+                <div id="problemStatement" class="statement">
+                    <ul>
+                        <li><h4>Predict Future Batting Average:</h4><p> Forecasting a player's batting average based on their past performance is essential for teams to make informed decisions regarding player selection, lineup optimization, and strategic planning. This prediction can provide valuable insights into a player's potential and assist in talent scouting and player development efforts.</p></li>
+                        <li><h4>Visualize Peformance Trends as Players Age:</h4><p>As players progress through their careers, their performance may fluctuate due to various factors such as age, experience, injuries, and changes in playing conditions. Visualizing these performance trends over time can help identify patterns, anomalies, and potential areas for improvement or intervention. Additionally, understanding how players' skills evolve as they age can aid in long-term player management and career planning.</p></li>
+                    </ul>
+                    <h3>Objective:</h3>
+                    <p>To develop a web-based application that utilizes historical baseball data to predict future batting averages for players and visualize performance trends as players age. By addressing these challenges, the application aims to empower baseball teams, coaches, and analysts with actionable insights to enhance player performance assessment and strategic decision-making processes.</p>
+                </div>
+
+                <div id="solutionStatement" class="statement">
+                    <h2>Solution Statement: Flask Web-App Implementation</h2>
+        <h4>Predict Future Batting Average:</h4>
+        <p>We utilized historical batting performance data from the provided Excel file (Batting.xlsx) to train a machine learning model. By employing the LinearRegression model from the scikit-learn library, we developed a predictive model capable of forecasting a player's future batting average based on their past performance. The model was trained on features such as the number of at-bats (AB), hits (H), and age of the player (age), extracted from the merged dataset. With the trained model, we created a Flask route (/predict_batting_avg) that accepts a player's ID as input and returns the predicted batting average for that player.</p>
+
+        <h4>Visualize Performance Trends as Players Age:</h4>
+        <p>We processed the historical batting and pitching data to calculate performance metrics such as hits (H), home runs (HR), strikeouts (SO), and earned run average (ERA). These metrics were aggregated and grouped by the age of the players to identify performance trends over time. Using the matplotlib library, we generated interactive visualizations that depict how batting and pitching statistics evolve as players age. The resulting plots showcase trends in hits, home runs, strikeouts, and ERA, providing valuable insights into player development trajectories and performance dynamics.</p>
+
+        <h4>Objective Achievement:</h4>
+        <p>Our Flask application serves as a web-based platform that integrates historical baseball data to achieve the stated objectives. Through the implementation of Flask routes and data processing techniques, we enable users to predict future batting averages and visualize performance trends based on player age. By addressing these challenges, our application empowers baseball teams, coaches, and analysts with actionable insights to enhance player performance assessment and strategic decision-making processes.</p>
+                </div>
+
+                <div id="efficacyStatement" class="statement">
+                    <h2>Efficacy of Using ChatGPT</h2>
+                    <p>ChatGPT was very helpful at optimizing code and making it easier to develop by avoiding a lot of typing. However, most of the time, it was confused about what we were trying to do, especially with formatting tables.</p>
+                </div>
             </div>
         </main>
     </div>
+    <script>
+        function showProblemStatement() {
+            var problemStatement = document.getElementById("problemStatement");
+            var solutionStatement = document.getElementById("solutionStatement");
+            var efficacyStatement = document.getElementById("efficacyStatement");
+
+            problemStatement.style.display = "block";
+            solutionStatement.style.display = "none";
+            efficacyStatement.style.display = "none";
+        }
+
+        function showSolutionStatement() {
+            var problemStatement = document.getElementById("problemStatement");
+            var solutionStatement = document.getElementById("solutionStatement");
+            var efficacyStatement = document.getElementById("efficacyStatement");
+
+            problemStatement.style.display = "none";
+            solutionStatement.style.display = "block";
+            efficacyStatement.style.display = "none";
+        }
+
+        function showEfficacyStatement() {
+            var problemStatement = document.getElementById("problemStatement");
+            var solutionStatement = document.getElementById("solutionStatement");
+            var efficacyStatement = document.getElementById("efficacyStatement");
+
+            problemStatement.style.display = "none";
+            solutionStatement.style.display = "none";
+            efficacyStatement.style.display = "block";
+        }
+    </script>
 </body>
 </html>
